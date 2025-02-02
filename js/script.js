@@ -13,25 +13,20 @@ document.addEventListener("DOMContentLoaded", function () {
     new Swiper(".mySwiper", {
         spaceBetween: 24,
         slidesPerView: "auto",
-        centeredSlides: true,
-        slidesOffsetBefore: -144,
+        slidesOffsetBefore: 540,
         slideToClickedSlide: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            dynamicBullets: true,
-            dynamicMainBullets: 1
-        },
         breakpoints: {
+            1280: {
+                slidesOffsetBefore: 540,
+            },
+
             992: {
-                slidesOffsetBefore: -144,
-                centeredSlides: true,
+                slidesOffsetBefore: 100,
             },
             768: {
                 slidesPerView: "auto",
                 spaceBetween: 24,
                 slidesOffsetBefore: 20,
-                centeredSlides: false,
             },
             320: {
                 slidesPerView: 1,
